@@ -18,7 +18,7 @@ const Top = () => {
       <hr className="w-16 h-[2px] md:h-16 md:w-[2px] bg-secondary" />
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl font-bold">Want to Connect?</h2>
-        <Link href="">
+        <Link href="/contact">
           <Button className="rounded-none border-2 border-secondary bg-secondary text-secondary-foreground hover:bg-secondary-foreground hover:text-secondary mt-2">
             Contact Us
           </Button>

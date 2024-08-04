@@ -39,41 +39,45 @@ const Footer = () => {
             <h2 className="text-2xl font-bold">Quick Links</h2>
             <ul className="flex flex-col">
               <li>
-                <Link href="#">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="#">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="#">Services</Link>
+                <Link href="/services/1">Services</Link>
               </li>
               <li>
-                <Link href="#">Contact</Link>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
-          <hr className="w-16 h-[2px] md:h-28 md:w-[2px] bg-secondary-foreground" />
+          <hr className="w-16 h-[2px] md:h-36 md:w-[2px] bg-secondary-foreground" />
           <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-bold">Important Links</h2>
             <ul className="flex flex-col">
               <li>
-                <Link href="#">Privacy Policy</Link>
+                <Link href="/privacy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="#">Terms & Condition</Link>
+                <Link href="/terms">Terms & Condition</Link>
               </li>
               <li>
-                <Link href="#">SiteMap</Link>
+                <Link href="/sitemap">SiteMap</Link>
               </li>
               <li>
-                <Link href="#">Developer</Link>
+                <Link href="https://parthsingh.webarc.one/" target="_blank">
+                  Developer
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="flex flex-col justify-center items-start md:items-end text-left md:text-right">
           <h2 className="text-2xl font-bold mb-2">Contact Us</h2>
-          <p>123, Lorem Ipsum, Dolor Sit Amet, 123456</p>
+          <p className="md:max-w-[200px]">
+            123, Lorem Ipsum, Dolor Sit Amet, 123456
+          </p>
           <p>+91 9191919191</p>
           <p>emailone@next.com</p>
           <p>emailtwo@next.com</p>

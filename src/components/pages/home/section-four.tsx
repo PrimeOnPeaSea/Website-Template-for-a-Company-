@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import LogoCarousel from "@/components/ui/logo-carousel";
 
 const carouselItems = [
@@ -26,9 +27,11 @@ const SectionFour = () => {
             Consectetur voluptate pariatur dolore laboris. Eiusmod dolor aute ut
             nulla pariatur officia consequat aute amet exercitation.
           </p>
-          <Button className="mt-4 border-2 border-secondary-foreground bg-secondary-foreground hover:bg-secondary hover:text-secondary-foreground rounded-none">
-            Contact Us
-          </Button>
+          <Link href="/contact">
+            <Button className="mt-4 border-2 border-secondary-foreground bg-secondary-foreground hover:bg-secondary hover:text-secondary-foreground rounded-none">
+              Contact Us
+            </Button>
+          </Link>
         </div>
         <LogoCarousel items={carouselItems} />
       </div>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 const SectionOne = () => {
@@ -43,12 +44,14 @@ const SectionOne = () => {
               iusto dolore doloribus! Dolor quo quos in alias at nesciunt enim
               dolores fuga est iusto? Voluptate!
             </p>
-            <Button
-              className="text-2xl p-5 md:text-4xl md:p-8 font-bold border-2 border-secondary-foreground hover:bg-secondary-foreground hover:text-secondary w-full md:w-max rounded-none"
-              variant="outline"
-            >
-              Let&apos;s Connect
-            </Button>
+            <Link href="/contact">
+              <Button
+                className="text-2xl p-5 md:text-4xl md:p-8 font-bold border-2 border-secondary-foreground hover:bg-secondary-foreground hover:text-secondary w-full md:w-max rounded-none"
+                variant="outline"
+              >
+                Let&apos;s Connect
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
