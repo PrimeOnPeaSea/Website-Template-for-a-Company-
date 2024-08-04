@@ -16,7 +16,7 @@ const LogoCarousel: FC<Props> = ({
 }) => {
   return (
     <div
-      className="flex overflow-hidden"
+      className="flex overflow-hidden max-w-[99dvw]"
       style={{
         maskImage: `${
           shadows &&
