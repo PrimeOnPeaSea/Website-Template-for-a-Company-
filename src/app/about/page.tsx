@@ -184,7 +184,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="container mx-auto my-10 py-10 flex flex-col gap-10">
+      <section className="container mx-auto my-10 py-10 flex flex-col gap-10 w-full">
         <h1 className="text-5xl font-bold text-center">Our Partners</h1>
         <LogoCarousel items={carouselItems} />
       </section>
