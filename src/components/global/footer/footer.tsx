@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-secondary-foreground">
       <Top />
-      <div className="w-full py-10 bg-secondary text-secondary-foreground grid grid-cols-1 md:grid-cols-3 gap-4 p-4 container mx-auto ">
+      <div className="w-full py-10 bg-secondary text-secondary-foreground grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
         <div className="flex flex-col justify-center items-start text-left gap-4">
           <Image
             src="/next.svg"
