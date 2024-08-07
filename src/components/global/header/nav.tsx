@@ -48,6 +48,32 @@ const Nav = () => {
             <hr className="w-[1px] h-6 bg-secondary" />
             <NavigationMenuItem>
               <NavigationMenuTrigger className="text-lg p-2 bg-secondary-foreground hover:bg-secondary hover:text-secondary-foreground focus:bg-secondary focus:text-secondary-foreground rounded-none">
+                About Us
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid w-[350px] gap-3 p-4 md:grid-cols-2">
+                  <NavigationMenuItem>
+                    <NavigationMenuLink
+                      href="/about"
+                      className="block select-none space-y-1 rounded-none p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-semibold"
+                    >
+                      About the Company
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink
+                      href="/founder"
+                      className="block select-none space-y-1 rounded-none p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground font-semibold"
+                    >
+                      Meet Our Founder
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <hr className="w-[1px] h-6 bg-secondary" />
+            <NavigationMenuItem>
+              <NavigationMenuTrigger className="text-lg p-2 bg-secondary-foreground hover:bg-secondary hover:text-secondary-foreground focus:bg-secondary focus:text-secondary-foreground rounded-none">
                 Our Services
               </NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -82,13 +108,12 @@ const Nav = () => {
             <hr className="w-[1px] h-6 bg-secondary" />
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="/about"
+                href="/gallery"
                 className="text-lg p-2 hover:bg-secondary hover:text-secondary-foreground"
               >
-                About Us
+                Gallery
               </NavigationMenuLink>
             </NavigationMenuItem>
-
             <hr className="w-[1px] h-6 bg-secondary" />
             <NavigationMenuItem>
               <NavigationMenuLink

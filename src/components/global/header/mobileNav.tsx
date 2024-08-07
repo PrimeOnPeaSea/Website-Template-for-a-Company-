@@ -32,11 +32,27 @@ const MobileNav = () => {
                 Home
               </li>
             </Link>
-            <Link href="/about">
-              <li className="cursor-pointer border-b border-b-zinc-300 p-4 hover:bg-zinc-200">
-                About Us
-              </li>
-            </Link>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="cursor-pointer border-b border-b-zinc-300 px-4 text-md font-normal">
+                  About Us
+                </AccordionTrigger>
+                <AccordionContent className="p-0">
+                  <ul>
+                    <Link href="/about">
+                      <li className="cursor-pointer border-b border-b-zinc-300 p-4 hover:bg-zinc-200 pl-10">
+                        About the Company
+                      </li>
+                    </Link>
+                    <Link href="/founder">
+                      <li className="cursor-pointer border-b border-b-zinc-300 p-4 hover:bg-zinc-200 pl-10">
+                        Meet Our Founder
+                      </li>
+                    </Link>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger className="cursor-pointer border-b border-b-zinc-300 px-4 text-md font-normal">
