@@ -4,6 +4,7 @@ import SectionThree from "@/components/pages/home/section-three";
 import SectionFour from "@/components/pages/home/section-four";
 import Testimonials from "@/components/pages/home/testimonials";
 import Hero from "@/components/pages/home/hero";
+import Alert from "@/components/global/alert";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionThree />
       <Testimonials />
       <SectionFour />
+      <Alert />
     </main>
   );
 }

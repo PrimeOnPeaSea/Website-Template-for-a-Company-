@@ -3,7 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
-
+import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/global/header/header";
 import Footer from "@/components/global/footer/footer";
 
@@ -27,6 +27,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Analytics />
         <Header />
         {children}
         <Footer />
