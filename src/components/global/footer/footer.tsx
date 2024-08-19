@@ -66,6 +66,9 @@ const Footer = () => {
                 <Link href="/sitemap">SiteMap</Link>
               </li>
               <li>
+                <Link href="/disclaimer">Disclaimer</Link>
+              </li>
+              <li>
                 <Link href="https://parthsingh.webarc.one/" target="_blank">
                   Developer
                 </Link>
