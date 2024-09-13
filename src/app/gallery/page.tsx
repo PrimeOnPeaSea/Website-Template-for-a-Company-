@@ -2,9 +2,7 @@ import Image from "next/image";
 import {
   Dialog,
   DialogContent,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
+  DialogClose,
   DialogTrigger,
 } from "@/components/ui/dialog";
 
@@ -120,27 +118,23 @@ const Gallery = () => {
         </div>
         {images.map((image, index) => (
           <Dialog key={index}>
-            <DialogTrigger className="after:content group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:  after:shadow-highlight overflow-hidden">
+            <DialogTrigger className="relative mb-5 block w-full cursor-zoom-in group z-10 hover:z-[100]">
               <Image
                 alt={image.alt}
-                className="group-hover:scale-110 transform brightness-90 transition will-change-auto group-hover:brightness-110 "
+                className="group-hover:scale-125 transition-transform duration-200"
                 src={image.src}
                 width={720}
                 height={480}
               />
             </DialogTrigger>
-            <DialogContent className="rounded-none border-black border-2">
-              <DialogHeader>
-                <DialogTitle>{image.title}</DialogTitle>
-              </DialogHeader>
-              <DialogFooter>
-                <Image
+            <DialogContent className="rounded text-white bg-transparent min-h-[90dvh] p-0 m-auto max-w-[80vw] border-none">
+               <Image
                   alt={image.alt}
                   src={image.src}
+                  className="rounded w-full h-full aspect-video object-cover"
                   width={1920}
                   height={1080}
                 />
-              </DialogFooter>
             </DialogContent>
           </Dialog>
         ))}
